@@ -4,8 +4,11 @@
   };
 
   NoteListView.prototype.returnHtml = function() {
-    return `<ul><li><div>Test</div></li>`;
-  }
+    let notes = this.noteList.returnNote();
+    for (let i = 0; i < notes.length; i++) {
+      return `<ul><li><div>${notes[i].returnText()}</div></li>`;
+    }
+  };
 
   exports.NoteListView = NoteListView;
 })(this);

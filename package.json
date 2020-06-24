@@ -1,0 +1,27 @@
+{
+  "name": "notes_app",
+  "version": "1.0.0",
+  "description": "notes_app",
+  "main": "note-controller.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichEwin/notes_app.git"
+  },
+  "author": "Rich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichEwin/notes_app/issues"
+  },
+  "homepage": "https://github.com/RichEwin/notes_app#readme"
+}
