@@ -4,4 +4,11 @@ function testClassConstructsWithText() {
   expect.isTrue(note.text === string);
 };
 
+function testMethodReturnsNoteText() {
+  let string = 'Hello World!';
+  let note = new Note(string);
+  expect.isTrue(note.returnText() === string);
+};
+
 testClassConstructsWithText()
+testMethodReturnsNoteText()
