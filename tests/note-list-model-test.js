@@ -15,6 +15,15 @@ function testReturnAllNotesInArray() {
   expect.isTrue(noteList.returnNote().length == 1);
 };
 
+function testStoresANoteWhenAddingNewNote() {
+  let noteList = new NoteList();
+  noteList.addNote('Here is another note');
+  noteList.addNote('Here is another another note');
+  expect.isTrue(noteList.returnNote()[0].text === 'Here is another note');
+  expect.isTrue(noteList.returnNote()[1].text === 'Here is another another note');
+};
+
 testClassInstantiatesWithArray()
 testStoresNotesInAnArray()
 testReturnAllNotesInArray()
+testStoresANoteWhenAddingNewNote()
