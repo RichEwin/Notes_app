@@ -9,5 +9,12 @@ function testStoresNotesInAnArray() {
   expect.isTrue(noteList.notes[0] instanceof Note);
 };
 
+function testReturnAllNotesInArray() {
+  let noteList = new NoteList();
+  noteList.addNote('this is a note');
+  expect.isTrue(noteList.returnNote().length == 1);
+};
+
 testClassInstantiatesWithArray()
 testStoresNotesInAnArray()
+testReturnAllNotesInArray()
